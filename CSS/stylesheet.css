@@ -1,0 +1,135 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.content {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/*CSS use for the header part*/
+.header {
+  height: 100px;
+}
+
+.header-left {
+  float: left;
+  text-align: left;
+}
+
+#brand-img {
+  width: 50px;
+  vertical-align: middle;
+}
+
+.helper {
+  /* this class is needed in order to vertically center the branding image in the div */
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;     /* stack flex items vertically */
+  justify-content: center;    /* center items vertically, in this case */
+  align-items: flex-end;
+}
+
+.author-name {
+  font-size: 32px;
+  font-weight: lighter;
+  margin: 5px 0px;
+  text-align: right;
+}
+
+.author-desc {
+  font-size: 14px;
+  margin: 5px 0px;
+  text-align: right;
+}
+
+/* Customizing the horizontal line */
+hr {
+  width: 100%;
+  height: 2px;
+  background-color: #7d97ad;
+  margin-bottom: 20px;
+}
+
+.main-img {
+  width: 100%;
+}
+
+/* Styling the Content Section */
+.section {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-heading {
+  font-weight: 900;
+  color: #7d97ad;
+}
+
+article {
+  width: 98%;
+  padding: 1%;
+  float: left;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2, h3 {
+  font-size: 1.5em;
+  margin: 5px 0px;
+}
+
+.article-img {
+  width: 100%;
+}
+
+p {
+  text-align: justify;
+}
+
+.tab-target {
+  min-height: 48px;
+  min-width: 48px;
+  padding: 1.5em;
+}
+
+
+
+/* I've added some multimedia queries to make sure that the site looks good on every screen */
+@media screen and (min-width: 450px) {
+  .author-name {
+    font-size: 42px;
+  }
+
+  .author-desc {
+    font-size: 18px;
+  }
+
+  h2, h3 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 750px) {
+  article {
+    width: 45%;
+    margin: 1%;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  article {
+    width: 31%;
+    padding: 1%;
+  }
+}

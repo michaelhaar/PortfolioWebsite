@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My Index.html Template</title>
+  <!-- A good explanation of the viewport can be found here:
+  https://www.w3schools.com/css/css_rwd_viewport.asp -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- I've done all the CSS styling in a seperated file, which is linked here -->
+  <link href="CSS/stylesheet.css" rel="stylesheet">
+  <!-- The following line links the Roboto font-family from fonts.google.com -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+</head>
+<body>
+  <div class="content">
+    <header class="header">
+      <div class="header header-left">
+        <!-- the span tag is needed in order to vertically center the image in the header-->
+        <img src="images/udacity_logo.png" alt="Branding Image of Udacity" id="brand-img">
+        <span class="helper"></span>
+      </div>
+      <div class="header header-right">
+        <h1 class="author-name">MICHAEL HAAR</h1>
+        <h4 class="author-desc">FRONT-END NINJA</h4>
+      </div>
+    </header>
+    <hr>
+
+    <img src="images/main-image.jpg" alt="Image of some random Code" class="main-img">
+
+    <section class="section">
+      <h2 class="section-heading">Featured Work</h2>
+      <div class="container">
+        <article>
+          <img src="images/map_flats_graz.png" alt="Map of the city graz and its flat prices" class="article-img">
+          <h3>'Grazer' House Prices</h3>
+          <p>Willhaben is the biggest advertising portal in Austria and therefore
+            the best place to buy condominiums. I wrote a webscraper in Python
+            to extract all advertisements from the <a href="https://www.willhaben.at">Willhaben-Website</a> and
+            save them to a MySQL Database. A webscraper is basically the same thing as
+            Google is using to crawl the web for their search engine. My
+            webscraper extracted about 4.000 condominiums in the area of my hometown (Graz),
+            which can be used for detailed analytics.</p>
+          <p>Now cherry picking is pretty easy.</p>
+          <p>I made a pretty cool visualization of the data for you by using the
+            3D-Map feature of Microsoft EXCEL.</p>
+          <a href="https://github.com/michi1992/WillhabenWebscraper" class="tab-target">Review Project</a>
+        </article>
+        <article>
+          <video class="article-img" autoplay>
+            <source src="videos/app_video_en_v7.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+          <h3> NRGkick Android App</h3>
+          <p>Electricity can be found almost anywhere,
+            <a href="https://www.nrgkick.com/">NRGkick</a> makes it accessible
+            for your electric car – NRGkick enables a charging
+            power up to 22kW, while delivering full transparency and advanced control
+            options to your smartphone.</p>
+          <p>Developing the early versions of the Android-App was really an awesome project.</p>
+          <p>Unfortunately, this project is strictly private.</p>
+        </article>
+        <article>
+          <img src="images/image-recognition.png" alt="Image of some random test-images and its predicted values" class="article-img">
+          <h3>Image Recognition</h3>
+          <p>During the Udacity-Deep-Learning-Course I was playing around with the CIFAR-10 dataset, which consists of
+            60000 32x32 images in 10 classes. The dataset consists of airplanes,
+            dogs, cats, and other objects. I've trained a convolutional neural
+            network to predict the class of the image.</p>
+          <p>The accuracy of my network was at 65% at the testing set. Maybe
+            that's even better than some humans can do!? The record for this
+            dataset can be found <a href="http://rodrigob.github.io/are_we_there_yet/build/classification_datasets_results.html#43494641522d3130">here</a>.</p>
+          <p>By the way, deep neural networks are also used to detect road signs for self driving cars.</p>
+          <p>I'll provide a link to the Github repository as soon as I have uploaded it.</p>
+        </article>
+        <article>
+          <img src="images/just_do_it.png" alt="Shia LeBeouf in the just-do-it pose" class="article-img">
+          <h3>Take a Break</h3>
+          <p>This python program will remind me to take some breaks from long
+            working sessions on my computer by opening my favourite video in the
+            browser every 2 hours.</p>
+          <a href="https://github.com/michi1992/take_a_break" class="tab-target">Review Project</a>
+        </article>
+        <article>
+          <img src="images/movie_trailer.png" alt="Screenshot of the movie trailer website" class="article-img">
+          <h3>Movie-Trailer-Website</h3>
+          <p>This little Python-project will create and open a website with some of my
+            favourite movies right now. You can even play the trailer of the
+            movies by clicking on the images.</p>
+          <a href="https://github.com/michi1992/Movie_trailer_website" class="tab-target">Review Project</a>
+        </article>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
